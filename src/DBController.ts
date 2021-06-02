@@ -5,10 +5,10 @@ class DBController {
   async create(request: Request, response: Response) {
     const dataInicial = new Date().getTime();
     const client = new Client({
-      host:'127.0.0.1',
+      host:'IP.DO.BANCO',
       port: 5432,
-      database: 'test',
-      password: 'docker',
+      database: 'postgres',
+      password: 'SENHA',
       user: 'postgres'
     });
 
