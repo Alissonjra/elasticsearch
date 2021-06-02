@@ -5,7 +5,7 @@ class DBController {
   async create(request: Request, response: Response) {
     const dataInicial = new Date().getTime();
     const client = new Client({
-      host:'IP.DO.BANCO',
+      host:'127.0.0.1',
       port: 5432,
       database: 'postgres',
       password: 'SENHA',
@@ -25,4 +25,4 @@ class DBController {
 }
 
 
-export { DBController }
+export default new DBController 
