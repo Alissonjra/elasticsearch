@@ -1,5 +1,6 @@
 import express from "express"
 import getClient from "./client/elasticSearch";
+import DBController from "./DBController";
 
 const app = express()
 
@@ -18,5 +19,7 @@ app.get('/',async (request,response)=>{
 
   return response.json(result)
 })
+
+app.get('/db/create',DBController.create)
 
 app.listen(3333,()=> console.log("Running.."))

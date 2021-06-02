@@ -7,8 +7,8 @@ class DBController {
     const client = new Client({
       host:'127.0.0.1',
       port: 5432,
-      database: 'postgres',
-      password: 'SENHA',
+      database: 'test',
+      password: 'docker',
       user: 'postgres'
     });
 
